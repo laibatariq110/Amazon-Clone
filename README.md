@@ -11,7 +11,7 @@ This project is a fully responsive **Amazon Clone** designed to replicate the co
 ---
 
 ## Live Demo
-[View the live project here!](https://laibatariq110.github.io/React-Color-Picker)
+[View the live project here!](https://laibatariq110.github.io/Amazon-Clone)
 
 ---
 
