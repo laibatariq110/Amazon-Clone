@@ -337,6 +337,18 @@ body {
         width: 200px;
     }   
 }
+@media(max-width: 450px){
+    .nav-search{
+
+        width: 150px;
+    }   
+    .nav-hamburger {
+       margin-left: 20px;
+    }
+    .search-icon{
+        font-size: 0.9rem;
+    }
+}
 
 
 
@@ -353,6 +365,11 @@ body {
     background-size: cover;
     width: 100%;
     display: none;
+}
+@media(max-width: 500px){
+    .hero-section img{
+        height: 500px
+    }
 }
 
 img.displaySlide {
@@ -489,20 +506,31 @@ span a:hover {
      
     }
 
-@media (min-width: 700px) {
+@media (max-width: 768px) {
     .box {
         width: calc(50% - 20px); 
         margin: 10px; 
+    }
+    .box1, .box2, .box3 ,.box6{
+        height: 200px;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .box4,.box7, .box8{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media (min-width: 900px) {
     .box {
         width: calc(33.33% - 20px); 
     }
+    
 }
-@media (min-width: 1310px) {
+@media (max-width: 1500px) {
     .box {
-        width: 23%;
+        width: 40%;
         height: 395px;
         background-color: white;
         position: relative;
@@ -808,6 +836,11 @@ footer a {
     margin: auto;
     
 }
+@media (max-width: 900px){
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+        margin-left: 20px;
+    }
+}
 @media (max-width: 770px) {
     .footer-infos {
         flex-direction: column; 
@@ -850,7 +883,7 @@ footer a {
         padding: 10px;
     }
      .footer-bottom td {
-        font-size: 0.5rem !important; /* Force smaller font size */
+        font-size: 0.3rem !important; /* Force smaller font size */
         padding: 5px !important; 
     }
     .footer-bottom-copyright {
