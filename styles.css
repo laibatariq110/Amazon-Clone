@@ -569,6 +569,7 @@ span a:hover {
     .box {
         width: 60%; 
     }
+    
  }  
 @media (max-width: 450px) {
     .box {
@@ -578,6 +579,9 @@ span a:hover {
 @media (max-width: 390px) {
     .box {
         width: 75%; 
+    }
+    .bigimg{
+        width: 270px;
     }
  }  
 
