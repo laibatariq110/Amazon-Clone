@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Arial;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -63,7 +64,17 @@ body {
     display: flex;
     align-items: center;
 }
-
+@media (max-width: 400px){
+    .add-deliver{
+        font-size: 0.6rem;
+    }
+    .add-country{
+        font-size: 0.7rem;
+    }
+    .fa-location-dot{
+        font-size: 0.6rem;
+    }
+}
 .nav-address:hover {
     cursor: pointer;
 }
@@ -337,16 +348,20 @@ body {
         width: 200px;
     }   
 }
-@media(max-width: 450px){
+@media(max-width: 470px){
+    .nav-logo{
+        width: 90px;
+        margin-right: 20px;
+    }
     .nav-search{
 
-        width: 150px;
+        width: 120px;
     }   
     .nav-hamburger {
-       margin-left: 20px;
+       margin-left: 30px;
     }
     .search-icon{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -505,14 +520,27 @@ span a:hover {
      text-align: center;
      
     }
+    
 
-@media (max-width: 768px) {
+
+@media (max-width: 1500px) {
     .box {
-        width: calc(50% - 20px); 
+        width: 24%;
+        height: 395px;
+        background-color: white;
+        position: relative;
+        bottom: 342px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .box {
+        width: 30%; 
         margin: 10px; 
     }
     .box1, .box2, .box3 ,.box6{
-        height: 200px;
+        height: 400px;
         justify-content: center;
         margin-bottom: 35px;
     }
@@ -522,24 +550,36 @@ span a:hover {
         justify-content: center;
     }
 }
-@media (min-width: 900px) {
+@media (max-width: 950px) {
     .box {
-        width: calc(33.33% - 20px); 
+        width: 35%; 
     }
-    
-}
-@media (max-width: 1500px) {
+ }  
+@media (max-width: 810px) {
     .box {
-        width: 40%;
-        height: 395px;
-        background-color: white;
-        position: relative;
-        bottom: 342px;
-        margin-bottom: 20px;
+        width: 40%; 
     }
-}
-
-
+ }  
+@media (max-width: 705px) {
+    .box {
+        width: 50%; 
+    }
+ }  
+@media (max-width: 545px) {
+    .box {
+        width: 60%; 
+    }
+ }  
+@media (max-width: 450px) {
+    .box {
+        width: 70%; 
+    }
+ }  
+@media (max-width: 390px) {
+    .box {
+        width: 75%; 
+    }
+ }  
 
 /** box5 **/
 #box5img1 {
@@ -573,11 +613,6 @@ span a:hover {
 .box5 span a {
     margin-bottom: 92px;
 }
-@media (max-width: 768px) {
-    .box {
-        width: 80%; 
-    }
- }
 
 /* items slider */
 
