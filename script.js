@@ -47,7 +47,7 @@ function calculateImagesToShow(){
     const windowWidth = window.innerWidth;
 
     if(windowWidth <= 520){
-        imagesToShow = 2.2;
+        imagesToShow = 2.5;
     }
     else if(windowWidth <= 560){
         imagesToShow = 2.9;
