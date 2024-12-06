@@ -352,7 +352,7 @@ body {
 @media(max-width: 470px){
     .nav-logo{
         width: 90px;
-        margin-right: 20px;
+        margin-right: 40px;
     }
     .nav-search{
 
@@ -368,7 +368,7 @@ body {
         display: none;
     }
     .search-input{
-        margin-left: 5px;
+        margin-left: 10px;
         border-radius: 5px;
     }
     .search-input::placeholder{
