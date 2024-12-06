@@ -369,6 +369,7 @@ body {
     }
     .search-input{
         margin-left: 5px;
+        border-radius: 5px;
     }
     .search-input::placeholder{
         font-size: 0.6rem;
