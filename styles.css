@@ -74,6 +74,7 @@ body {
     .fa-location-dot{
         font-size: 0.6rem;
     }
+    
 }
 .nav-address:hover {
     cursor: pointer;
@@ -355,13 +356,16 @@ body {
     }
     .nav-search{
 
-        width: 120px;
+        width: 140px;
     }   
     .nav-hamburger {
        margin-left: 30px;
     }
     .search-icon{
         font-size: 0.8rem;
+    }
+    .search-select{
+        display: none;
     }
 }
 
@@ -581,7 +585,7 @@ span a:hover {
         width: 75%; 
     }
     .bigimg{
-        width: 270px;
+        width: 250px;
     }
  }  
 
