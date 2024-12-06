@@ -351,7 +351,7 @@ body {
 }
 @media(max-width: 470px){
     .nav-logo{
-        width: 120px;
+        width: 130px;
         margin-right: 40px;
     }
     .nav-search{
@@ -361,6 +361,9 @@ body {
     .nav-hamburger {
        margin-left: 30px;
     }
+    .nav-address{
+        margin-right: 15px;
+    }
     .search-icon{
         font-size: 0.8rem;
     }
@@ -369,8 +372,7 @@ body {
     }
     .search-input{
         margin-left: 10px !important;
-        border-top-right-radius: none !important;
-        border-bottom-right-radius: none !important;
+        width: 120px;
     }
     .search-input::placeholder{
         font-size: 0.6rem;
