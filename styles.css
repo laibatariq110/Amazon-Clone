@@ -367,6 +367,12 @@ body {
     .search-select{
         display: none;
     }
+    .search-input{
+        margin-left: 5px;
+    }
+    .search-input::placeholder{
+        font-size: 0.6rem;
+    }
 }
 
 
