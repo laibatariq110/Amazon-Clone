@@ -350,9 +350,6 @@ body {
     }   
 }
 @media(max-width: 470px){
-    .nav-logo{
-        width: 150px;
-    }
     .nav-search{
 
         width: 160px;
@@ -370,7 +367,6 @@ body {
         display: none;
     }
     .search-input{
-        margin-left: 10px !important;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         width: 130px;
