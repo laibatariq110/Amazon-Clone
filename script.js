@@ -93,6 +93,8 @@ function prevToySlide() {
 }
 window.addEventListener('resize', calculateImagesToShow);
 calculateImagesToShow();
+toyCurrentIndex = 0;
+showToySlide(toyCurrentIndex);
 
 // NAVBAR HAMBURGER CLICK ON SMALL SCREENS
 document.querySelector('.hamburger-btn').addEventListener('click', function() {
