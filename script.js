@@ -44,6 +44,7 @@ let imagesToShow = 6;
 let toyMaxIndex;
 
 function calculateImagesToShow(){
+    toyCurrentIndex = 0;
     const windowWidth = window.innerWidth;
 
     if(windowWidth <= 520){
@@ -93,8 +94,6 @@ function prevToySlide() {
 }
 window.addEventListener('resize', calculateImagesToShow);
 calculateImagesToShow();
-toyCurrentIndex = 0;
-showToySlide(toyCurrentIndex);
 
 // NAVBAR HAMBURGER CLICK ON SMALL SCREENS
 document.querySelector('.hamburger-btn').addEventListener('click', function() {
