@@ -645,6 +645,7 @@ span a:hover {
     position: relative;
     bottom: 340px;
     overflow-x: hidden;
+
 }
 .box-slider h2{
     padding: 10px;
@@ -668,7 +669,6 @@ span a:hover {
 .box-slider-wrapper {
     width: 100%;
     height: 6vh;
-    
 }
 
 .box-slider-imgs {
