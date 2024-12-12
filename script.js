@@ -43,27 +43,17 @@ let toyCurrentIndex = 0;
 let imagesToShow = 6;
 let toyMaxIndex;
 
-function calculateImagesToShow(){
+// Calculate the number of images to show based on screen size
+function calculateImagesToShow() {
     const windowWidth = window.innerWidth;
 
-    if(windowWidth <= 520){
-        imagesToShow = 2.5;
-    }
-    else if(windowWidth <= 560){
-        imagesToShow = 2.9;
-    }
-    else if(windowWidth <= 650){
-        imagesToShow = 3.2;
-    }
-   else if(windowWidth <= 780){
-        imagesToShow = 4;
-    }
-    else{
-        imagesToShow = 6;
-    }
-    
-    toyMaxIndex = toySlides.length - imagesToShow; 
-    showToySlide(toyCurrentIndex);
+    if (windowWidth <= 520) imagesToShow = 2; // Show 2 images on very small screens
+    else if (windowWidth <= 768) imagesToShow = 3; // Show 3 images on tablets
+    else if (windowWidth <= 1024) imagesToShow = 4; // Show 4 images on smaller laptops
+    else imagesToShow = 6; // Default: 6 images
+
+    toyMaxIndex = Math.max(0, toySlides.length - imagesToShow); // Prevent negative maxIndex
+    showToySlide(toyCurrentIndex); // Adjust slider after recalculating
 }
 
 // Show the slide based on the current index
@@ -91,8 +81,11 @@ function prevToySlide() {
     }
     showToySlide(toyCurrentIndex);
 }
+
+// Initialize and update on resize
 window.addEventListener('resize', calculateImagesToShow);
 calculateImagesToShow();
+
 
 // NAVBAR HAMBURGER CLICK ON SMALL SCREENS
 document.querySelector('.hamburger-btn').addEventListener('click', function() {
