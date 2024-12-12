@@ -637,32 +637,52 @@ span a:hover {
 }
 
 /* items slider */
+
 .box-slider {
-    width: 100%; 
-    height: auto;
+    width: 1300px;
+    height: 290px;
     background-color: white;
     position: relative;
     bottom: 340px;
-    overflow: hidden; 
+}
+.box-slider h2{
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.box-slider-imgs{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.box-slider img{
+    cursor: pointer;
 }
 
-.box-slider h2 {
-    padding: 10px 20px 0 20px;
+
+.box-slider{
+    position: relative;
+    width: 100%;
+}
+.box-slider-wrapper {
+    width: 100%;
+    height: 6vh;
+
 }
 
 .box-slider-imgs {
     display: flex;
+    width: 100%;
     transition: transform 0.5s ease;
 }
 
 .slider-image {
-    flex: 0 0 calc(100% / 6); /* Default: Show 6 images */
+    flex: 0 0 calc(100% / 6); /* Show 6 images at once */
     max-width: 100%;
-    height: auto; 
+    height: 200px;
+ 
 }
-
-button.prev,
-button.next {
+button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -671,7 +691,6 @@ button.next {
     border: none;
     cursor: pointer;
     padding: 10px;
-    z-index: 10;
 }
 
 button.prev {
@@ -680,12 +699,6 @@ button.prev {
 
 button.next {
     right: 10px;
-}
-
-/* Wrapper to contain the slider and prevent overflow */
-.box-slider-wrapper {
-    width: 100%;
-    overflow: hidden;
 }
 
 /* SEE PERSONALIZED RECOMMENDATIONS */
