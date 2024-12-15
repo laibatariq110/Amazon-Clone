@@ -885,7 +885,7 @@ footer a {
     list-style: none;
 }
 .footer-bottom-copyright ul li:first-child{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .footer-bottom-copyright ul li:hover{
    text-decoration: underline;
